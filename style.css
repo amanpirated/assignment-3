@@ -1,0 +1,61 @@
+
+header{
+    width: 100%;
+    height: 10vh;
+    border: 1px ;
+    background-color: #e4e4e4;
+    box-sizing: border-box;
+}
+#head{
+    text-align: center;
+    padding:1.25rem;
+    font-size: larger;
+    font-family: "PT Sans", sans-serif;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 100px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border:1px solid #e4e4e4;
+    display: flex;              
+    justify-content: center;    
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
+    background-color: #fff;
+    font-size: larger;
+}
+form{
+    margin-left:520px
+}
+input{
+    width: 200px;
+    height: 25px;
+    border: 1px solid #e4e4e4;
+}
+button{
+    width: 50px;
+    height: 35px;
+    border: 1px solid;
+
+}
+.greet{
+    animation: greet 2s linear 0s 1 forwards;
+    opacity: 0;
+}
+@keyframes greet {
+    from{
+        transform:translateY(-10px) ;
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
