@@ -21,10 +21,18 @@ box4.addEventListener("click", function() {
 let name=document.querySelector("input");
 let head=document.querySelector("#head");
 let button=document.querySelector("#greetBtn");
-greetBtn.addEventListener("click",function(){
+
+button.addEventListener("click", function(event) {
     event.preventDefault();
-    head.innerText=head.innerText + name.value;
+    let text = input.value.trim();
+    if(text) {
+        head.innerText += text; 
+        input.value = "";      
+    }
 });
-head.classList.remove("greet");
-void head.offsetwidth;
-head.classList.add("greet");
+button.addEventListener("dblclick", function(event) {
+    event.preventDefault();
+    head.innerText = "HELLO"; 
+});
+
+
