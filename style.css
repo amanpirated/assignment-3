@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    border: 1px ;
+    align-items: center;
+    background-color: #eae8e8;
+}
+p{
+    font-size: xx-large;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    gap: 20px;
+}
+.boxes{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-color: #f1efef;
+}
+form{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#Name{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+}
+.greet{
+    width: 60px;
+    height: 50px;
+    margin-top: -7px;
+    font-size: large;
+}
